@@ -9,14 +9,14 @@ public class PostmanEchoTest {
   void PostmanEchoTest() {
     given()
             .baseUri("https://postman-echo.com")
-            .body("kakito dannye") // отправляемые данные (заголовки и query можно выставлять аналогично)
+            .body("kakito dann") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
             .when()
             .post("/post")
 // Проверки
             .then()
             .statusCode(200)
-            .body("data", equalTo("kakito dannye"))
+            .body("data", equalTo("kakito danye"))
     ;
   }
 }
